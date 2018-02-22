@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera página</title>
+  
+    <script type="text/javascript">
+        
+        imprimir("hola");
+        imprimir("mundo")
+        
+        function imprimir(x){
+            alert(x);
+            
+        }
+   //Función con parámetros normal     
+        sumarNumeros(34,20);
+        
+        function sumarNumeros(x,y){
+            var result = x+y;
+            alert(result);
+            
+        }
+  //Función con parámetros y con return      
+        var r=division(20,5);
+        document.write(r);
+    //Otra manera de hacerlo
+        document.write(division(20,5));
+        
+        function division(x,y){
+            
+            var resultado = x/y;
+            return resultado;
+            //El return hace que la función se comporte como una variable
+        }
+    //función dentro de otra funcion   
+        operacion(48,29);
+        
+        function operacion(a,b){
+            
+            var r=division(a,b)*5;
+            alert(r);
+        }
+        
+      
+        
+    </script>
+</head>
+
+<body>
+   
+</body>
+</html>

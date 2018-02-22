@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera página</title>
+  
+    <script type="text/javascript">
+        
+        
+        function suma (x,y){
+            var r = Number (x)+Number(y);
+            alert(r);
+        }
+        
+        function resta (x,y){
+            var r = Number (x)-Number(y);
+            alert(r);
+        }
+        
+        function multiplicacion (x,y){
+            var r = Number (x)*Number(y);
+            alert(r);
+        }
+        
+        function division (x,y){
+            var r = Number (x)/Number(y);
+            alert(r);
+        }
+        
+    </script>
+</head>
+
+<body>
+    <div>
+        <input id="a" type="text"/>
+        <input id="b" type="text"/>
+        <input type="button" onclick="suma(document.getElementById('a').value,document.getElementById('b').value);" value="sumar"/>
+        <input type="button" onclick="resta(document.getElementById('a').value,document.getElementById('b').value);" value="restar"/>
+        <input type="button" onclick="multiplicacion(document.getElementById('a').value,document.getElementById('b').value);" value="multiplicar"/>
+        <input type="button" onclick="division(document.getElementById('a').value,document.getElementById('b').value);" value="dividir"/>
+    </div>
+</body>
+</html>
