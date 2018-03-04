@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		/*AJAX*/
+		jQuery.ajax({
+
+			url:'http://localhost/Practicas%20JS/test.php',
+			type:'post',
+			data:{
+				number:'10'
+			}
+		}).done(
+			function(resp)
+			{
+				alert(resp);
+			}
+		);
+
+
+
+	</script>
+</head>
+<body>
+	hola
+
+</body>
+</html>
