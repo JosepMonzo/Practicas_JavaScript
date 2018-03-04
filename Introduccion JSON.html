@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<section id="test">
+		<h1>Tutorial JSON (JavaScript Object Notation)</h1>
+		<div id="content">
+			
+		</div>
+		<div id="content2">
+	</section>
+	<script type="text/javascript">
+	//Los atributos pueden ser Strings, números y hasta funciones
+	
+		var objetoJSON;
+		objetoJSON= {"nombre":"Josep","edad":38,"render":function(){
+			document.getElementById('content').innerHTML=objetoJSON.nombre+" "+objetoJSON.edad;}};
+
+		objetoJSON.render();
+
+	//Agregando más de 1 campo
+
+	var objetos;
+	objetos= {"personas":[{"nombre":"Josep","edad":23},{"nombre":"Belen","edad":29}]};
+
+	document.getElementById('content2').innerHTML=objetos.personas[1].nombre;
+	</script>
+</body>
+</html>
